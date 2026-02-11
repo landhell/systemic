@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue 3rd</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-full grid place-items-center">
+    <div id="app">
+      <header-component></header-component>
+    </div>
+
+    <script>
+      let app = {
+        components: {
+          "header-component": {
+            template: `
+              <div class="mb-4">
+                <h1 class="text-3xl font-bold block">SYSTEMIC</h1>
+                <nav class="flex space-x-4 block">
+                  <a href="#">Home</a>
+                  <a href="#">About</a>
+                  <a href="#">Contact</a>
+                </nav>
+              </div>
+            `
+          }
+        }
+      }
+
+      Vue.createApp(app).mount("#app")
+    </script>
+  </body>
+</html>
