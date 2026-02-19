@@ -16,28 +16,12 @@
   </head>
   <body class="h-full grid place-items-center">
     <div id="app">
-      <header-component></header-component>
+      <header-component>SYSTEMIC</header-component>
     </div>
 
-    <script>
-      let app = {
-        components: {
-          "header-component": {
-            template: `
-              <div class="mb-4">
-                <h1 class="text-3xl font-bold block">SYSTEMIC</h1>
-                <nav class="flex space-x-4 block">
-                  <a href="#">Home</a>
-                  <a href="#">About</a>
-                  <a href="#">Contact</a>
-                </nav>
-              </div>
-            `
-          }
-        }
-      }
-
-      Vue.createApp(app).mount("#app")
+    <script type="module">
+      import App from "./js/components/app.js"
+      Vue.createApp(App).mount("#app")
     </script>
   </body>
 </html>
