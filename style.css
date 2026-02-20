@@ -31,3 +31,25 @@ body::before {
   width: 70%;
   max-width: 300px;
 }
+
+.bio {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 3em 0 auto;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.bio > p:first-child {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.bio > p:last-child {
+  text-align: left;
+  padding-left: 1em;
+}
