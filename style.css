@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  background-image: url("imgs/theme_title.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.artist-pic {
+  width: 100%;
+  padding-top: 8em;
+  display: flex;
+}
+
+.artist-pic > div:first-child {
+  flex-grow: 1;
+}
+.artist-pic > div:last-child {
+  width: 70%;
+  max-width: 300px;
+}
