@@ -21,18 +21,25 @@ body::before {
   background-position: left top;
 }
 
-.artist-pic {
+.artist-pic,
+.bug-pic {
   width: 100%;
   padding-top: 8em;
   display: flex;
 }
 
-.artist-pic > div:first-child {
+.artist-pic > div:first-child,
+.bug-pic > div:first-child {
   flex-grow: 1;
 }
 .artist-pic > div:last-child {
   width: 70%;
   max-width: 300px;
+}
+
+.bug-pic > div:last-child {
+  width: 70%;
+  max-width: 800px;
 }
 
 .bio {
@@ -81,4 +88,11 @@ body::before {
   text-align: left;
   padding-left: 0.5em;
   flex-basis: 55%;
+}
+
+.statement h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 1em;
+  line-height: 1.2;
 }
