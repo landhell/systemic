@@ -96,3 +96,16 @@ body::before {
   padding-bottom: 1em;
   line-height: 1.2;
 }
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+}
+
+.video-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-bottom: 8em;
+}
