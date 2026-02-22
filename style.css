@@ -67,7 +67,7 @@ body::before {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 2em 1em 5em 1em;
+  padding: 3em 1em 5em 1em;
   display: flex;
   justify-content: center;
   align-items: flex-start;
